@@ -1,0 +1,338 @@
+body{
+  overflow-x: hidden !important;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  
+}
+.social-media i{
+    text-align: right;
+    float: right;
+    color: white;
+    background-color: #c4b095;
+    border-radius: 50%;
+    padding: 16px;
+    font-size: 20px;
+    margin-left: 10px;
+    display: inline !important;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.social-media i:hover{
+  background-color: #000;
+}
+.side-menu i{
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 16px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.vertical-menu {
+    width: 100%;
+    display: none;
+  }
+  
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    border-top: 2px solid gray;
+    color: white;
+  }
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.header img{
+  float: left;
+}
+
+.explore{
+    text-align: center;
+   
+}
+.explore-main{
+    background-color: #cccccc;
+    margin-top: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.explore-main h1, p {
+    color: white;
+}
+
+
+.explore-btns button:nth-of-type(1){
+  background-color: #c4b095;
+  color: white;
+  border: none;
+  padding: 18px 30px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.explore-btns button:nth-of-type(2){
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  .explore-btns button:hover{
+    background-color: #e8a4a5;
+    color: white;
+  }
+  .fa-youtube-play{
+      font-weight: 25px;
+      border-radius: 50%;
+  }
+
+  .dowload-main{
+     background-image: url("./images/exp.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding-top: 130px;
+     padding-bottom: 130px;
+    }
+    .dowload-main button{
+        padding: 10px 40px !important;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .dowload button{
+        padding: 10px;
+    }
+    .dowload button:hover{
+      background-color: #e8a4a5;
+      color: white;
+      border: none;
+    }
+    .services-heading{
+        text-align: center;
+    }
+    .company-service-main{
+        color: white;
+       
+    }
+
+    .custemer-xperience p{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .services-heading{
+        padding-top: 50px;
+    }
+    .services-heading h3{
+        color: violet;
+        font-style: italic;
+    }
+    .custemer-xperience P{
+        color: #e8a4a5;
+    }
+    .co-commercialization p{
+        color: #e8a4a5;
+    }
+    .icons-forserveces{
+        text-align: center;
+    }
+    .icons-forserveces i{
+        font-weight: 100;
+        font-size: xx-large;
+        border-radius: 50%;
+        background-color: #e8a4a5;
+        color: white;
+        padding: 28px;
+        width: 90px;
+        height: 90px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .icons-forserveces i:hover{
+      color: green;
+    }
+ 
+
+    /* slider  start*/
+
+   .testimonies img{
+        width: 190px;
+        height: 150px;
+        text-align: center;
+      }
+    .testimonies table {
+        margin: 0 auto;
+      }
+    .testimonies h4{
+        text-align: center;
+      }
+     .testimonies p {
+        overflow:scroll;
+        overflow-y: auto;
+        overflow-x: auto;
+        text-align: center;
+      }
+
+      .testimonies-main{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-image: url("./images/green.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      /* slider  end*/
+
+      .events-main p{
+          color: black;
+          line-height: 0em;
+          font-style: italic;
+      }
+      .events{
+          margin-left: 30px;
+      }
+      .events button{
+          background-color: #c6b099;
+          padding: 10px 40px;
+          color: white;
+          border: none;
+      }
+      .events button:hover{
+        color: green;
+      }
+
+      .event-row{
+          margin-bottom: 10px;
+      }
+      .blog-heading{
+          text-align: center;
+      }
+      .blog-heading p{
+          color: black;
+      }
+      .panel-heading img{
+          width: 100%;
+          padding: 0;
+      }
+      .release-data{
+          text-align: center;
+          background-color: #eae3d9;
+      }
+      .panel-heading {
+        padding: 0px 0px !important;
+      }    
+      .panel-footer{
+        padding-top:  0px !important;
+        padding-bottom: 0em !important;
+      }
+      .date{
+        font-size: 70px;
+      }
+      .month{
+        font-size: 25px;
+      }
+      .year{
+        font-size: 25px;
+        padding: 0px;
+        margin: 0em;
+      }
+      .panel-footer p{
+          color: black;
+      }
+      .blog-main {
+        background-color: #f8f7fc;
+        padding-bottom: 50px;
+        padding-top: 50px;
+      }
+
+
+      .news-letter{
+          text-align: center;
+          background-color: #000;
+          padding-top: 60px;
+          padding-bottom: 60px;
+          color: white;
+          margin-bottom: 2em;
+      }
+      
+      form.example input[type=email] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 70%;
+        background: #f1f1f1;
+      }
+      
+      form.example button {
+        float: left;
+        width: 30%;
+        padding: 10px;
+        background: #b49777;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+      }
+      
+      form.example button:hover {
+        background: forestgreen;
+      }
+      
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .news-letter p{
+          margin-top: 20px;
+      }
+
+      #dots li{
+        margin: 0;
+        width: 10px !important;
+        border: 4px solid #fff;
+        padding: 6px !important;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center !important;
+      }
+      #dots li:nth-of-type(3){
+        background-color: #fff;
+      }
+
+#dots{
+  text-align: center !important;
+}
+
+      /* responsive start */
+      /* @media only screen and (min-width: 768px) {
+        .social-media{
+            margin-top: 20px;
+        }
+          .social-media i{
+              text-align: center !important;
+              float: left;
+          }
+          .events-main{
+              text-align: center;
+          }
+      } */
+
+     
