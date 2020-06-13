@@ -104,7 +104,7 @@ body{
   }
 
   .dowload-main{
-     background-image: url("./images/exp.png");
+     background-image: url("./exp.png");
      background-size: cover;
      background-repeat: no-repeat;
      padding-top: 130px;
@@ -192,7 +192,7 @@ body{
       .testimonies-main{
         padding-top: 30px;
         padding-bottom: 30px;
-        background-image: url("./images/green.jpg");
+        background-image: url("./green.jpg");
         background-size: cover;
         background-repeat: no-repeat;
       }
