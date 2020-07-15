@@ -198,14 +198,13 @@ body{
 }
 
     /* slider  start*/
-
    .testimonies img{
         width: 190px;
         height: 150px;
         text-align: center;
       }
     .testimonies table {
-        margin: 0 auto;
+        margin: 80px auto 80px auto;
       }
     .testimonies h4{
         text-align: center;
@@ -280,7 +279,7 @@ body{
         margin: 0em;
       }
       .panel-footer p{
-          color: black;
+          color: #a79e9e;
       }
       .blog-main {
         background-color: #f8f7fc;
@@ -350,8 +349,8 @@ body{
 }
 
       /* responsive start */
-      /* @media only screen and (min-width: 768px) {
-        .social-media{
+      @media only screen and (min-width: 768px) {
+        /* .social-media{
             margin-top: 20px;
         }
           .social-media i{
@@ -360,7 +359,7 @@ body{
           }
           .events-main{
               text-align: center;
-          }
-      } */
+          } */
+      }
 
      
