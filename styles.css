@@ -36,6 +36,9 @@ body{
 .vertical-menu {
     width: 100%;
     display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   
   .vertical-menu a {
@@ -57,7 +60,12 @@ body{
 .header{
     padding-top: 20px;
     padding-bottom: 20px;
-    
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
 }
 .header img{
   float: left;
@@ -70,8 +78,8 @@ body{
 .explore-main{
     background-color: #cccccc;
     margin-top: 20px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 .explore-main h1, p {
     color: white;
@@ -107,13 +115,18 @@ body{
      background-image: url("./exp.png");
      background-size: cover;
      background-repeat: no-repeat;
-     padding-top: 130px;
-     padding-bottom: 130px;
+     padding-top: 180px;
+     padding-bottom: 180px;
+    padding-left: 50px;
     }
     .dowload-main button{
         padding: 10px 40px !important;
         background-color: white;
         border-radius: 5px;
+        border: none;
+    }
+    .dowload h4{
+      color: #fff;
     }
     .dowload button{
         padding: 10px;
@@ -123,28 +136,39 @@ body{
       color: white;
       border: none;
     }
-    .services-heading{
-        text-align: center;
-    }
-    .company-service-main{
-        color: white;
-       
+    .testimonials-heading{
+      text-align: center;
+      color: #fff;
     }
 
+  
+    .company-service-main{
+        color: white;  
+    }
+    .company-service{
+      padding-bottom: 100px;
+    }
+    .company-service-main .col-lg-3, .company-service-main .col-lg-4, .company-service-main .col-lg-1{
+      padding: 0;
+      margin: 0;
+    }
     .custemer-xperience p{
         text-align: justify;
         text-justify: inter-word;
+        color: #e8a4a5;
     }
 
     .services-heading{
         padding-top: 50px;
+        text-align: center;
+        padding-bottom: 50px;
     }
     .services-heading h3{
         color: violet;
         font-style: italic;
     }
-    .custemer-xperience P{
-        color: #e8a4a5;
+    .custemer-xperience h3{
+      direction: rtl;
     }
     .co-commercialization p{
         color: #e8a4a5;
@@ -167,7 +191,11 @@ body{
     .icons-forserveces i:hover{
       color: green;
     }
- 
+    .company-service-main .row [class*='col-']:not(.hid) {
+      background-color: #ffeeee;
+      background-clip: content-box;
+      min-height: 20px;
+}
 
     /* slider  start*/
 

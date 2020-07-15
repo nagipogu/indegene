@@ -12,14 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- DC Horizontal Carousel CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="tsc_carousel_hor.css" />
-
-    <!-- jQuery Library (skip this step if already called on page ) -->
     <script type="text/javascript" src="http://www.dreamtemplate.com/dreamcodes/jquery.min.js"></script>
-    <!-- (do not call twice) -->
-
-    <!-- DC Horizontal Carousel JS -->
     <script type="text/javascript"
         src="http://www.dreamtemplate.com/dreamcodes/carousel_hor/js/jquery.bxslider2.min.js"></script>
     <script type="text/javascript"
@@ -30,12 +25,15 @@
             $(".side-menu").click(function () {
                 $(".vertical-menu").toggle();
             });
+            $("a").click(function(){
+                $(".vertical-menu").hide();
+            })
         });
     </script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="header">
                 <div class="col-lg-6">
@@ -48,9 +46,9 @@
                         <i class="fa fa-navicon"> </i>
                     </div>
                     <div class="social-media">
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-facebook-f"></i>
                         <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
                     </div>
 
                 </div>
@@ -62,14 +60,13 @@
                     <a href="#" class="active">Home</a>
                     <a href="#About">About</a>
                     <a href="#Product">Product</a>
-                    <a href="#Events">Events</a>
                     <a href="#Blog">Blog</a>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </div>
         <div class="row explore-main">
-            <div class="explore">
+            <div class="explore" data-aos="zoom-in-up">
                 <div class="col-lg-12">
                     <h1>Enterprise Marketing and Customer Experience</h1>
                     <p>LEVERRAGE DATA TO DRIVE PERSONILIZATION AT SCALE</p>
@@ -81,39 +78,58 @@
             </div>
         </div>
         <div class="row dowload-main" id="About">
-            <div class="dowload">
+            <div class="dowload" data-aos="zoom-out-right">
                 <div class="col-lg-8">
                     <h3>THE DIGITAL SAVVY PHARMA MARLETER 2020</h3>
-                    <h3>Must have tool for every pharma marketer</h3>
+                    <h4>" Must have tool for every pharma marketer "</h4>
                     <button><i class="fa fa-play-circle"></i> DOWNLOAD</button>
                 </div>
             </div>
         </div>
-        <div class="row" class="company-service-main" id="Product">
+        <div class="row" class="company-service-main">
             <div class="company-service">
                 <div class="col-lg-12">
                     <div class="services-heading">
-                        <h2>COMPANY</h2>
-                        <h3>Services</h3>
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-3">
+                                <div class="custemer-xperience">
+                                </div>
+                            </div>
+                            <div class="col-lg-3" id="Product">
+                                <div class="icons-forserveces" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                    <h2>COMPANY</h2>
+                                    <h3>Services</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="co-commercialization">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2"></div>
                     <div class="col-lg-3">
-                        <div class="custemer-xperience ex-right">
+                        <div class="custemer-xperience ex-right" data-aos="fade-right">
                             <h3>Custemer Experience</h3>
                             <p>A must have tool for pharma marketers to gain insight into the latest preferences,
                                 marketing budget allocations, technology utilization </p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="icons-forserveces">
+                    <div class="col-lg-3">
+                        <div class="icons-forserveces" data-aos="fade-left">
                             <i class="fa fa-handshake-o"></i>
                             <i class="fa fa-hdd-o"></i>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="co-commercialization ex-right">
+                        <div class="co-commercialization ex-right" data-aos="fade-up">
                             <h3>Co-commercialization</h3>
                             <p>A must have tool for pharma marketers to gain insight into the latest preferences,
                                 marketing budget allocations, technology utilization </p>
@@ -122,22 +138,22 @@
                     <div class="col-lg-1"></div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2"></div>
                     <div class="col-lg-3">
-                        <div class="custemer-xperience ex-right">
+                        <div class="custemer-xperience ex-right" data-aos="fade-right">
                             <h3>Data and Anylitics</h3>
                             <p>A must have tool for pharma marketers to gain insight into the latest preferences,
                                 marketing budget allocations, technology utilization </p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="icons-forserveces">
+                    <div class="col-lg-3">
+                        <div class="icons-forserveces" data-aos="fade-left">
                             <i class="fa fa-line-chart"></i>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="co-commercialization">
+                        <div class="co-commercialization" data-aos="fade-up">
                             <h3>R&D / Medical Transformation</h3>
                             <p>A must have tool for pharma marketers to gain insight into the latest preferences,
                                 marketing budget allocations, technology utilization </p>
@@ -146,22 +162,22 @@
                     <div class="col-lg-1"></div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2"></div>
                     <div class="col-lg-3">
-                        <div class="custemer-xperience">
+                        <div class="custemer-xperience" data-aos="fade-right">
                             <h3>Digital Transformation</h3>
                             <p>A must have tool for pharma marketers to gain insight into the latest preferences,
                                 marketing budget allocations, technology utilization </p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="icons-forserveces">
+                    <div class="col-lg-3">
+                        <div class="icons-forserveces" data-aos="fade-left">
                             <i class="fa fa-ship"></i>
                             <i class="fa fa-line-chart"></i>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="co-commercialization">
+                        <div class="co-commercialization" data-aos="fade-up">
                             <h3>Omnipresence CXM platform</h3>
                             <p>A must have tool for pharma marketers to gain insight into the latest preferences,
                                 marketing budget allocations, technology utilization </p>
@@ -177,6 +193,9 @@
                 <table cellpadding="5" cellspacing="0">
                     <tr>
                         <td>
+                            <div class="testimonials-heading"  data-aos="flip-left">
+                                <h2>INSPIRATIONAL TESTIMONY</h2>
+                            </div>
                             <div class="tsc_carousel_hor">
                                 <div class="l-carousel">
                                     <ul class="carousel">
@@ -225,102 +244,34 @@
                                         <li></li>
                                     </ul>
                                 </div>
-                              
+
                                 <div class="tsc_clr"></div>
                             </div>
                         </td>
                     </tr>
                 </table>
-              
             </div>
-           
-        </div>
-        <div class="row events-main" id="Events">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-9">
-                <h3>UPCOMING EVENTS</h3>
-                <div class="row event-row">
-                    <div class="col-lg-4">
-                        <img src="./hands.jpeg" alt="events" width="260" height="160">
-                    </div>
-                    <div class="col-lg-6 events">
-                        <h4>Globel Pharmaceutical Regulatory Affairs Summit</h4>
-                        <p> <i class="fa fa-calendar"></i> Manday, 8:00 AM - Tuesday, 8:00 PM</p>
-                        <p> <i class="fa fa-crosshairs"></i> Madisson Hotel</p>
-                        <p> <i class="fa fa-building-o"></i> 203 St. Moutain View, San Franciso, Califonia, USA</p>
-                        <button>Read More</button>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="col-lg-4">
-                        <img src="./hands.jpeg" alt="events" width="260" height="160">
-                    </div>
-                    <div class="col-lg-6 events">
-                        <h4>Globel Pharmaceutical Regulatory Affairs Summit</h4>
-                        <p> <i class="fa fa-calendar"></i> Manday, 8:00 AM - Tuesday, 8:00 PM</p>
-                        <p> <i class="fa fa-crosshairs"></i> Madisson Hotel</p>
-                        <p> <i class="fa fa-building-o"></i> 203 St. Moutain View, San Franciso, Califonia, USA</p>
-                        <button>Read More</button>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="col-lg-4">
-                        <img src="./hands.jpeg" alt="events" width="260" height="160">
-                    </div>
-                    <div class="col-lg-6 events">
-                        <h4>Globel Pharmaceutical Regulatory Affairs Summit</h4>
-                        <p> <i class="fa fa-calendar"></i> Manday, 8:00 AM - Tuesday, 8:00 PM</p>
-                        <p> <i class="fa fa-crosshairs"></i> Madisson Hotel</p>
-                        <p> <i class="fa fa-building-o"></i> 203 St. Moutain View, San Franciso, Califonia, USA</p>
-                        <button>Read More</button>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="col-lg-4">
-                        <img src="./hands.jpeg" alt="events" width="260" height="160">
-                    </div>
-                    <div class="col-lg-6 events">
-                        <h4>Globel Pharmaceutical Regulatory Affairs Summit</h4>
-                        <p> <i class="fa fa-calendar"></i> Manday, 8:00 AM - Tuesday, 8:00 PM</p>
-                        <p> <i class="fa fa-crosshairs"></i> Madisson Hotel</p>
-                        <p> <i class="fa fa-building-o"></i> 203 St. Moutain View, San Franciso, Califonia, USA</p>
-                        <button>Read More</button>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="col-lg-4">
-                        <img src="./hands.jpeg" alt="events" width="260" height="160">
-                    </div>
-                    <div class="col-lg-6 events">
-                        <h4>Globel Pharmaceutical Regulatory Affairs Summit</h4>
-                        <p> <i class="fa fa-calendar"></i> Manday, 8:00 AM - Tuesday, 8:00 PM</p>
-                        <p> <i class="fa fa-crosshairs"></i> Madisson Hotel</p>
-                        <p> <i class="fa fa-building-o"></i> 203 St. Moutain View, San Franciso, Califonia, USA</p>
-                        <button>Read More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-1"></div>
         </div>
         <div class="row blog-main" id="Blog">
-            <div class="blog-heading">
+            <div class="blog-heading" data-aos="flip-left">
                 <h2>RECENT BLOG</h2>
                 <p>Our Blog</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3">
                 <div class="pannel-tab">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" data-aos="fade-right">
                             <img src="./desk-top.jpg" alt="events">
                         </div>
-                        <div class="panel-footer">
+                        <div class="panel-footer" data-aos="fade-left">
                             <div class="row">
                                 <div class="col-lg-4 release-data">
                                     <span class="date">18</span><br>
                                     <span class="month">January</span><br>
                                     <span class="year">2019</span>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8" data-aos="fade-up">
                                     <h4>Press Release</h4>
                                     <p>Indegene Acquires DT Associates, Provides End-to-End Enterprise Solution
                                         for Customer Excellence - from Consulting to Operations</p>
@@ -330,20 +281,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="pannel-tab">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" data-aos="fade-right">
                             <img src="./desk-top.jpg" alt="events">
                         </div>
-                        <div class="panel-footer">
+                        <div class="panel-footer" data-aos="fade-left">
                             <div class="row">
                                 <div class="col-lg-4 release-data">
                                     <span class="date">18</span><br>
                                     <span class="month">January</span><br>
                                     <span class="year">2019</span>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8" data-aos="fade-up">
                                     <h4>Press Release</h4>
                                     <p>Indegene Acquires DT Associates, Provides End-to-End Enterprise Solution
                                         for Customer Excellence - from Consulting to Operations</p>
@@ -353,20 +304,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="pannel-tab">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" data-aos="fade-right">
                             <img src="./desk-top.jpg" alt="events">
                         </div>
-                        <div class="panel-footer">
+                        <div class="panel-footer" data-aos="fade-left">
                             <div class="row">
                                 <div class="col-lg-4 release-data">
                                     <span class="date">18</span><br>
                                     <span class="month">January</span><br>
                                     <span class="year">2019</span>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8" data-aos="fade-up">
                                     <h4>Press Release</h4>
                                     <p>Indegene Acquires DT Associates, Provides End-to-End Enterprise Solution
                                         for Customer Excellence - from Consulting to Operations</p>
@@ -376,10 +327,11 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-2"></div>
         </div>
-        <div class="row news-letter">
-            <h2>NEWS LETTER</h2>
-            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <div class="row news-letter" id="contact">
+            <h2 data-aos="fade-down">NEWS LETTER</h2>
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px" data-aos="fade-down">
                 <input type="email" placeholder="Enter email address" name="search2">
                 <button type="submit">Subscribe</button>
             </form>
@@ -388,8 +340,14 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(function () { jQuery('.tsc_carousel_hor .carousel').jcarousel({ scroll: 4 }); });
+        AOS.init({
+            duration:1000,
+            offset:120,
+            easing:'ease-in-out'
+        });
     </script>
 </body>
 
